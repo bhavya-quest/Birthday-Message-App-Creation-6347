@@ -1,0 +1,31 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
